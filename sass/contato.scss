@@ -1,0 +1,115 @@
+@import 'global';
+
+// Navbar 
+.navbar{
+    @include navbar;
+    background: $bg_color;
+
+    .back-button{
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .logo-center{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0 5%;
+
+        img{
+            position: relative;
+            width: 60%;
+            text-align: center;
+        }
+
+    }
+
+    .menu-itens{
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        cursor: pointer;
+
+        img{
+            margin: 0 10px;
+        }   
+        
+        span{
+            position: relative;
+            bottom: 8px;
+            right: 15px;
+            padding: 2px 6px;
+            color: #fff;
+            font-size: .7em;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 50%;
+            background-color: $primary_color;
+        }
+
+    }
+    
+}
+
+// Contato 
+.contato{
+
+    .sub-header{
+        width: 100%;
+        height: auto;
+        padding: 5px 0;
+        color: $primary_color;
+        background-color: $sub_header;
+
+        h3{
+            padding: 0 10%;
+        }
+
+    }
+
+    ul{
+
+        li{
+            font-size: 1em;
+            padding: 15px 10%;
+            border-bottom: 1px solid $sub_header;
+
+            img{
+                position: relative;
+                top: 4px;
+                margin-right: 5px;
+            }
+
+        }
+
+    }
+
+}
+
+// Redes Social 
+.social{
+    margin: 20px 0 0 0;
+    text-align: center;
+
+    ul{
+
+        li{
+            margin: 0 2%;
+            display: inline-block;
+        }
+
+    }
+
+}
+
+// Footer 
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    background-color: $primary_color;
+}

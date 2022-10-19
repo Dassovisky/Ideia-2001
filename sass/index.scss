@@ -1,0 +1,107 @@
+@import 'global';
+
+body{
+    background-color: $bg_color;
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// Navbar 
+.navbar{
+    @include navbar;
+
+    .language,
+    .menu-button{
+        padding: 20px;
+        cursor: pointer;
+    }
+
+}
+
+// Main 
+.main{
+
+    .logo{
+        text-align: center;
+        margin: 35px 0;
+
+        img{
+            width: 90%;
+        }
+
+    }
+
+    .button-group{
+        display: flex;
+        flex-direction: column;
+
+        .button{
+            width: 300px;
+            height: auto;
+            margin: 5px 0;
+            padding: 15px;
+            font-weight: bold;
+            color: #fff;
+            border: 1px solid $primary_color;
+            border-radius: 50px;
+            background-color: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                background-color: $primary_color;
+            }
+
+            span{
+                position: relative;
+                bottom: 3px;
+                margin: 0 0 0 5px;
+
+                img{
+                    width: 1.2em;
+                    height: auto;
+                }
+
+            }
+
+        }
+
+        .primary-button{
+            @extend .button;
+            background-color: $primary_color;
+
+            &:hover{
+                border-color: $primary_color_hover;
+                background-color: $primary_color_hover;
+            }
+
+        }
+
+    }
+
+}
+
+// Footer 
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    button{
+        margin: 15px 0;
+        border-radius: 50%;
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+}
